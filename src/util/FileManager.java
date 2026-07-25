@@ -1,4 +1,4 @@
-/*package util;
+package util;
 
 import model.Shipment;
 import model.TransportMode;
@@ -79,5 +79,3 @@ public class FileManager {
         return shipments;
     }
 }
-
- */

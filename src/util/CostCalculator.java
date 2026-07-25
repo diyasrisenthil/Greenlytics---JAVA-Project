@@ -1,4 +1,4 @@
-/*package util;
+package util;
 
 import model.Shipment;
 
@@ -12,4 +12,3 @@ public class CostCalculator {
                 * costPerKm;
     }
 }
-*/
