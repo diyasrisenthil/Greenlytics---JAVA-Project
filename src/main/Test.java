@@ -15,8 +15,10 @@ public class Test {
             ShipmentService shipmentService = new ShipmentService();
             ReportService reportService = new ReportService();
 
-            shipmentService.addShipment();
+            // shipmentService.addShipment();
+
             shipmentService.viewShipments();
+
             shipmentService.searchShipment();
 
             reportService.generateReport();
@@ -24,7 +26,6 @@ public class Test {
         } else {
 
             System.out.println("Login Failed!");
-
         }
     }
 }

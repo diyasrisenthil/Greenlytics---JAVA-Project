@@ -22,4 +22,25 @@ public enum TransportMode {
     public double getEmissionFactor() {
         return emissionFactor;
     }
+    public static TransportMode getBestMode(double distance, double weight) {
+
+        TransportMode bestMode = ROAD;
+        double bestScore = Double.MAX_VALUE;
+
+        for (TransportMode mode : TransportMode.values()) {
+
+            double cost = distance * mode.getCostPerKm();
+            double emission = distance * weight * mode.getEmissionFactor();
+
+            // Lower score = Better option
+            double score = cost + emission;
+
+            if (score < bestScore) {
+                bestScore = score;
+                bestMode = mode;
+            }
+        }
+
+        return bestMode;
+    }
 }
