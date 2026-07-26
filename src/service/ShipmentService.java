@@ -37,6 +37,8 @@ public class ShipmentService {
 
             System.out.print("Weight (tonnes): ");
             double weight = scanner.nextDouble();
+            System.out.print("Revenue ($): ");
+            double revenue = scanner.nextDouble();
 
             scanner.nextLine();
 
@@ -79,6 +81,7 @@ public class ShipmentService {
                     destination,
                     distance,
                     weight,
+                    revenue,
                     mode
             );
 

@@ -1,3 +1,0 @@
-101,Sandhiya,Chennai,Bangalore,350.0,2.5,ROAD
-101,Sandhiya,Chennai,Bangalore,350.0,2.5,ROAD
-300,swetha,delhi,chennai,900.0,50.0,RAIL

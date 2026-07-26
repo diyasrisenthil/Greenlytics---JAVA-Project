@@ -10,8 +10,6 @@ import java.util.List;
 
 public class ReportService {
 
-    private static final double REVENUE_PER_KM = 8.0;
-
     public void generateReport() {
 
         List<Shipment> shipments = FileManager.loadShipments();
@@ -31,7 +29,7 @@ public class ReportService {
             double cost = CostCalculator.calculateCost(shipment);
             double emission = CarbonCalculator.calculateEmission(shipment);
 
-            double revenue = shipment.getDistance() * REVENUE_PER_KM;
+            double revenue = shipment.getRevenue();
             double profit = revenue - cost;
 
             int score = calculateScore(cost, emission);

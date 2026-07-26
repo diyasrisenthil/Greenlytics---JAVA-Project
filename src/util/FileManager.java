@@ -62,7 +62,8 @@ public class FileManager {
                         data[3],
                         Double.parseDouble(data[4]),
                         Double.parseDouble(data[5]),
-                        TransportMode.valueOf(data[6])
+                        Double.parseDouble(data[6]),
+                        TransportMode.valueOf(data[7])
                 );
 
                 shipments.add(shipment);

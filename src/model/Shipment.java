@@ -8,6 +8,7 @@ public class Shipment {
     private String destination;
     private double distance;
     private double weight;
+    private double revenue;
     private TransportMode transportMode;
 
     public Shipment() {
@@ -19,6 +20,7 @@ public class Shipment {
                     String destination,
                     double distance,
                     double weight,
+                    double revenue,
                     TransportMode transportMode) {
 
         this.shipmentId = shipmentId;
@@ -27,6 +29,7 @@ public class Shipment {
         this.destination = destination;
         this.distance = distance;
         this.weight = weight;
+        this.revenue = revenue;
         this.transportMode = transportMode;
     }
 
@@ -78,9 +81,19 @@ public class Shipment {
         this.weight = weight;
     }
 
+    public double getRevenue() {
+        return revenue;
+    }
+
+    public void setRevenue(double revenue) {
+        this.revenue = revenue;
+    }
+
+
     public TransportMode getTransportMode() {
         return transportMode;
     }
+
 
     public void setTransportMode(TransportMode transportMode) {
         this.transportMode = transportMode;
@@ -95,6 +108,7 @@ public class Shipment {
                 destination + "," +
                 distance + "," +
                 weight + "," +
+                revenue + "," +
                 transportMode;
     }
 }
