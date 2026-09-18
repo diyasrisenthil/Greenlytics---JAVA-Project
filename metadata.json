@@ -1,0 +1,6 @@
+{
+  "name": "GREENLYTICS",
+  "description": "Smarter Logistics. Lower Carbon. Better Decisions. Enterprise logistics & sustainability intelligence dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
